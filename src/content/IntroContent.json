@@ -1,0 +1,13 @@
+{
+  "title": "Welcome to Lavin Consulting",
+  "text": "Expert solutions in payroll management, school application support, tax compliance, social media management, and financial guidance. Let us help you streamline your operations and achieve your goals.",
+  "button": [
+    {
+      "title": "Get Started"
+    },
+    {
+      "title": "Learn More",
+      "color": "#fff"
+    }
+  ]
+}

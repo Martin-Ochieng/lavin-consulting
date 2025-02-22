@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 200 200">
+  <g id="trust" transform="translate(-10 -10)">
+    <!-- Shield Background -->
+    <path d="M110,30L50,60V100c0,50,40,80,60,90,20-10,60-40,60-90V60Z" fill="#2e186a" stroke="#000" stroke-width="4"/>
+
+    <!-- Handshake -->
+    <path d="M80,120c10,10,20,20,40,10s30-20,40-10-20,40-40,40S80,130,80,120Z" fill="#feba91"/>
+
+    <!-- Hands -->
+    <path d="M70,110a10,10,0,0,1,10-10h10v20H80A10,10,0,0,1,70,110Z" fill="#fe7624"/>
+    <path d="M150,110a10,10,0,0,0-10-10h-10v20h10A10,10,0,0,0,150,110Z" fill="#fe7624"/>
+  </g>
+</svg>

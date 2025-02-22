@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1247 711.9">
+  <g id="mission_solid" transform="translate(2.5)">
+    <g id="mission_solid_group" transform="translate(-3)">
+      <g id="mission_core">
+        <path id="target_outer" d="M623.5,50C360,50,150,260,150,523.5S360,997,623.5,997,1097,787,1097,523.5,887,50,623.5,50Z" transform="translate(-150 -50)" fill="#5d21d1"/>
+        <path id="target_middle" d="M623.5,150C440,150,300,290,300,473.5S440,797,623.5,797,947,657,947,473.5,807,150,623.5,150Z" transform="translate(-150 -50)" fill="#fe7624"/>
+        <path id="target_inner" d="M623.5,250C520,250,425,345,425,448.5S520,647,623.5,647,822,552,822,448.5,727,250,623.5,250Z" transform="translate(-150 -50)" fill="#fff"/>
+        <circle id="bullseye" cx="623.5" cy="398.5" r="50" fill="#5d21d1"/>
+      </g>
+      <g id="arrow" transform="translate(300,200)">
+        <path d="M523.5,498.5l200-200-50-50-200,200V498.5Z" fill="#5d21d1"/>
+        <polygon points="673.5 298.5 723.5 248.5 673.5 198.5 623.5 248.5 673.5 298.5" fill="#fe7624"/>
+      </g>
+    </g>
+  </g>
+</svg>
