@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 200 200">
+  <g id="support" transform="translate(-10 -10)">
+    <!-- Headset Base -->
+    <path d="M110,30A60,60,0,0,0,50,90V140A20,20,0,0,0,70,160H80V130H60V90A50,50,0,0,1,160,90v40H140v30h10a20,20,0,0,0,20-20V90A60,60,0,0,0,110,30Z" fill="#2e186a"/>
+
+    <!-- Microphone -->
+    <path d="M140,150a10,10,0,0,1-10,10H110v10h20a20,20,0,0,0,20-20Z" fill="#fe7624"/>
+
+    <!-- Ear Cups -->
+    <rect x="40" y="90" width="20" height="50" rx="10" ry="10" fill="#feba91"/>
+    <rect x="160" y="90" width="20" height="50" rx="10" ry="10" fill="#feba91"/>
+  </g>
+</svg>
