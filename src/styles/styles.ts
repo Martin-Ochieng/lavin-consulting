@@ -22,13 +22,16 @@ export const Styles = createGlobalStyle`
     }
 
 
-    body {
-        margin:0;
-        padding:0;
+    html,body {
+        margin: 0;
+        padding: 0;
         border: 0;
         outline: 0;
         background: #fff;
-        overflow-x: inherit;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+        overflow-wrap: break-word; /* Ensures long text doesn't overflow */
     }
 
     a:hover {
