@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 210 210">
+  <g id="vision" transform="translate(-10 -10)">
+    <!-- Mountain Base -->
+    <polygon points="50,160 115,60 180,160" fill="#2e186a"/>
+
+    <!-- Snowcap -->
+    <polygon points="100,100 115,70 130,100" fill="#feba91"/>
+
+    <!-- Flagpole -->
+    <rect x="113" y="50" width="4" height="20" fill="#fff"/>
+
+    <!-- Flag -->
+    <polygon points="117,50 137,58 117,66" fill="#fe7624"/>
+  </g>
+</svg>

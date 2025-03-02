@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="210mm" height="297mm" version="1.1" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="c" x1="496.41" x2="496.41" y1="821.9" y2="329.45" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#3d3e40" offset="0"/>
+   <stop stop-color="#797c81" offset="1"/>
+  </linearGradient>
+  <linearGradient id="d" x1="227.44" x2="221.51" y1="671.59" y2="428.33" gradientTransform="scale(.26458)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#3e9802" offset="0"/>
+   <stop stop-color="#addb04" offset="1"/>
+  </linearGradient>
+ </defs>
+ <path transform="scale(.26458)" d="m413.73 144.63a41.575 38.494 0 0 0 -36.006 19.248 41.575 38.494 0 0 0 0 38.494 41.575 38.494 0 0 0 36.006 19.248h166.3a41.575 38.494 0 0 0 36.004 -19.248 41.575 38.494 0 0 0 0 -38.494 41.575 38.494 0 0 0 -36.004 -19.248h-166.3zm-20.934 113.68a103.37 101.9 0 0 0 -103.37 101.9h-0.07617l118.08 263.24-0.16406 0.08399a62.162 54.935 16.38 0 1 -24.541 67.926 62.162 54.935 16.38 0 1 -32.131 6.0254h-28.402l37.305 86.682-0.27735 0.18359a62.766 56.209 18.667 0 1 -23.004 72.943 62.766 56.209 18.667 0 1 -27.258 6.2539 62.766 56.209 18.667 0 1 -0.03125 0 62.766 56.209 18.667 0 1 -2.8945 0h-17.025v24.127h0.42188a103.37 101.9 0 0 0 103.37 101.9h206.74a103.37 101.9 0 0 0 103.37 -101.9v-527.5a103.37 101.9 0 0 0 -101.52 -101.77v-0.08984h-208.59zm73.615 33.188h60.473v56.693h56.693v60.473h-56.693v56.691h-60.473v-56.691h-56.693v-60.473h56.693v-56.693zm-59.125 582.38h173.86v60.473h-173.86v-60.473z" fill="url(#c)" style="paint-order:markers stroke fill"/>
+ <rect x="104.07" y="63.123" width="58.189" height="6.0159e-14" fill="#800000" style="paint-order:markers stroke fill"/>
+ <path d="m13.417 98.886a4.9943 5.083 0 0 0 -3.9239 8.2264l31.732 41.022h-19.164a4.9943 5.083 0 0 0 -3.5126 8.6951l56.663 57.06a4.9943 5.083 0 0 0 8.1702 -5.4457l-13.955-36.729 22.311 0.50901a4.9943 5.083 0 0 0 4.6327 -7.2409l-29.132-63.173a4.9943 5.083 0 0 0 -4.5205 -2.9228z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="url(#d)" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+</svg>
