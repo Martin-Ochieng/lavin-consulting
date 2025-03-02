@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/lavin-consulting/static/css/main.4b30b629.css",
-    "main.js": "/lavin-consulting/static/js/main.814c0a18.js",
+    "main.js": "/lavin-consulting/static/js/main.26fc413b.js",
     "static/css/617.95751abf.chunk.css": "/lavin-consulting/static/css/617.95751abf.chunk.css",
-    "static/js/617.0cc44199.chunk.js": "/lavin-consulting/static/js/617.0cc44199.chunk.js",
+    "static/js/617.2ad6613c.chunk.js": "/lavin-consulting/static/js/617.2ad6613c.chunk.js",
     "static/js/453.5f441d32.chunk.js": "/lavin-consulting/static/js/453.5f441d32.chunk.js",
-    "static/js/416.9dc34e4a.chunk.js": "/lavin-consulting/static/js/416.9dc34e4a.chunk.js",
+    "static/js/978.b9aa6fea.chunk.js": "/lavin-consulting/static/js/978.b9aa6fea.chunk.js",
     "static/js/538.7502cfce.chunk.js": "/lavin-consulting/static/js/538.7502cfce.chunk.js",
     "static/js/566.6028ebf8.chunk.js": "/lavin-consulting/static/js/566.6028ebf8.chunk.js",
     "static/js/80.433124bb.chunk.js": "/lavin-consulting/static/js/80.433124bb.chunk.js",
@@ -16,11 +16,11 @@
     "index.html": "/lavin-consulting/index.html",
     "static/media/slick.woff": "/lavin-consulting/static/media/slick.295183786cd8a1389865.woff",
     "main.4b30b629.css.map": "/lavin-consulting/static/css/main.4b30b629.css.map",
-    "main.814c0a18.js.map": "/lavin-consulting/static/js/main.814c0a18.js.map",
+    "main.26fc413b.js.map": "/lavin-consulting/static/js/main.26fc413b.js.map",
     "617.95751abf.chunk.css.map": "/lavin-consulting/static/css/617.95751abf.chunk.css.map",
-    "617.0cc44199.chunk.js.map": "/lavin-consulting/static/js/617.0cc44199.chunk.js.map",
+    "617.2ad6613c.chunk.js.map": "/lavin-consulting/static/js/617.2ad6613c.chunk.js.map",
     "453.5f441d32.chunk.js.map": "/lavin-consulting/static/js/453.5f441d32.chunk.js.map",
-    "416.9dc34e4a.chunk.js.map": "/lavin-consulting/static/js/416.9dc34e4a.chunk.js.map",
+    "978.b9aa6fea.chunk.js.map": "/lavin-consulting/static/js/978.b9aa6fea.chunk.js.map",
     "538.7502cfce.chunk.js.map": "/lavin-consulting/static/js/538.7502cfce.chunk.js.map",
     "566.6028ebf8.chunk.js.map": "/lavin-consulting/static/js/566.6028ebf8.chunk.js.map",
     "80.433124bb.chunk.js.map": "/lavin-consulting/static/js/80.433124bb.chunk.js.map",
@@ -28,6 +28,6 @@
   },
   "entrypoints": [
     "static/css/main.4b30b629.css",
-    "static/js/main.814c0a18.js"
+    "static/js/main.26fc413b.js"
   ]
 }
