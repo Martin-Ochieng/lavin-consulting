@@ -91,9 +91,9 @@ export const FooterContainer = styled("div")`
   max-width: 510px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
+  justify-content: right;
+  text-align: right;
+  align-items: inherit;
   transition: all 0.1s ease-in-out;
 
   a {
@@ -164,6 +164,25 @@ export const LanguageSwitch = styled("div")`
 `;
 
 export const LanguageSwitchContainer = styled("div")`
+  display: flex;
+  justify-content: space-between;
+  width: 85px;
+`;
+
+export const SocialSwitch = styled("div")`
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+`;
+
+export const SocialSwitchContainer = styled("div")`
   display: flex;
   justify-content: space-between;
   width: 85px;

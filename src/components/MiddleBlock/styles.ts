@@ -2,15 +2,26 @@ import styled from "styled-components";
 
 export const MiddleBlockSection = styled("section")`
     position: relative;
-    padding: 7.5rem 0 3rem;
+    padding: 7.5rem 2rem 3rem; /* Add horizontal padding */
     text-align: center;
     display: flex;
     justify-content: center;
+    width: 100%;
 
     @media screen and (max-width: 1024px) {
-        padding: 5.5rem 0 3rem;
+        padding: 5.5rem 2rem 3rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 4rem 1.5rem 2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 3rem 1rem 2rem; /* Ensure space around content */
     }
 `;
+
+
 
 export const Content = styled("p")`
     padding: 0.75rem 0 0.75rem;
@@ -18,11 +29,27 @@ export const Content = styled("p")`
 
 export const ContentWrapper = styled("div")`
     max-width: 570px;
+    width: 100%;
+    padding: 0 20px; /* Ensures space on both sides */
+    margin: 0 auto;  /* Centers content properly */
+
+    @media only screen and (max-width: 1024px) {
+        max-width: 90%;
+        padding: 0 15px;
+    }
 
     @media only screen and (max-width: 768px) {
         max-width: 100%;
+        padding: 0 10px; /* Reduce padding on mobile */
+    }
+
+    @media only screen and (max-width: 480px) {
+        text-align: center;
+        padding: 0 5px; /* Prevents text from touching edges */
+        overflow-wrap: break-word; /* Ensures text wraps properly */
     }
 `;
+
 
 
 export const SliderWrapper = styled.div`

@@ -28,7 +28,7 @@ export const Styles = createGlobalStyle`
         border: 0;
         outline: 0;
         background: #fff;
-        overflow-x: hidden;
+        overflow-x: inherit;
     }
 
     a:hover {

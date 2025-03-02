@@ -10,19 +10,15 @@ import {
   Extra,
   LogoContainer,
   Para,
-  Large,
-  Chat,
   FooterContainer,
   Language,
   Label,
   LanguageSwitch,
   LanguageSwitchContainer,
+    SocialSwitch,
+    SocialSwitchContainer,
 } from "./styles";
 
-interface SocialLinkProps {
-  href: string;
-  src: string;
-}
 
 interface SocialLinkMeProps {
   href: string;
@@ -35,19 +31,7 @@ const Footer = ({ t }: { t: TFunction }) => {
     i18n.changeLanguage(language).then(() => {});
   };
 
-  const SocialLink = ({ href, src }: SocialLinkProps) => {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        key={src}
-        aria-label={src}
-      >
-        <SvgIcon src={src} width="25px" height="25px" />
-      </a>
-    );
-  };
+
 
   const SocialLinkMe = ({ href, src,alt}: SocialLinkMeProps) => {
     return (
@@ -71,14 +55,29 @@ const Footer = ({ t }: { t: TFunction }) => {
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
-              <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
-              </Para>
-              <a href="mailto:lavinconsulting254@gmail.com">
-                <Chat>{t(`Let's Chat`)}</Chat>
-              </a>
+              <Language>{t("Contact Us")}</Language>
+              <SocialSwitchContainer>
+
+
+                <SocialSwitch onClick={() => window.open("https://twitter.com/YourProfile", "_blank")}>
+                  <SvgIcon
+                      src="twitter.svg"
+                      aria-label="homepage"
+                      width="30px"
+                      height="30px"
+                  />
+                </SocialSwitch>
+
+
+                <SocialSwitch onClick={() => window.open("https://www.linkedin.com/in/lavin-consulting-services-a131992b4/", "_blank")}>
+                  <SvgIcon
+                      src="linkedin.svg"
+                      aria-label="homepage"
+                      width="30px"
+                      height="30px"
+                  />
+                </SocialSwitch>
+              </SocialSwitchContainer>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Language>{t("Address")}</Language>
@@ -129,16 +128,6 @@ const Footer = ({ t }: { t: TFunction }) => {
               </LogoContainer>
             </NavLink>
             <FooterContainer>
-
-
-              <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
-              />
-              <SocialLink
-                href="https://www.linkedin.com/in/lavin-consulting-services-a131992b4/"
-                src="linkedin.svg"
-              />
 
               <SocialLinkMe
                   href="https://www.linkedin.com/in/martin-ochieng-a829b67b/"
