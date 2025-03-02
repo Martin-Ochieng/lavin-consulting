@@ -1,5 +1,39 @@
 {
   "title": "Streamline Your Processes with Expert Consulting",
-  "text": "Lavin Consulting specializes in payroll management, school application support, tax compliance, social media management, and financial planning. Our goal is to simplify your operations and provide expert guidance every step of the way.",
-  "button": "Get Started"
+  "text": "We understand the challenges you face and provide practical solutions with a focus on",
+  "button": "Get Started",
+  "sliderContent": [
+    {
+      "icon": "efficiency.svg",
+      "text": "Efficiency"
+    },
+    {
+      "icon": "expertise.svg",
+      "text": "Expertise"
+    },
+    {
+      "icon": "integrity.svg",
+      "text": "Integrity"
+    },
+    {
+      "icon": "compliance.svg",
+      "text": "Compliance"
+    },
+    {
+      "icon": "convenience.svg",
+      "text": "Convenience"
+    },
+    {
+      "icon": "customercentric.svg",
+      "text": "Customer-Support"
+    },
+    {
+      "icon": "innovation.svg",
+      "text": "Innovation"
+    },
+    {
+      "icon": "empowerment.svg",
+      "text": "Empowerment"
+    }
+  ]
 }

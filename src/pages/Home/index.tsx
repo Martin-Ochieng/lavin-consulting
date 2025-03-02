@@ -7,10 +7,11 @@ import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
-import PayrollProduct from "../../content/PayrollProduct.json";
-import SocialMedia from "../../content/SocialMedia.json";
-import SchoolApplication from "../../content/SchoolApplication.json";
+
+import CorporateContent from "../../content/corporate";
+import IndividualContent from "../../content/individual";
+
+
 import ContactContent from "../../content/ContactContent.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
@@ -28,8 +29,8 @@ const Home = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: true,
+        autoplaySpeed: 5000,
+        arrows: true
     };
 
     return (
@@ -47,6 +48,7 @@ const Home = () => {
                 title={MiddleBlockContent.title}
                 content={MiddleBlockContent.text}
                 button={MiddleBlockContent.button}
+                sliderContent={MiddleBlockContent.sliderContent} // Pass slider data here
             />
             <ContentBlock
                 direction="left"
@@ -54,64 +56,67 @@ const Home = () => {
                 content={AboutContent.text}
                 section={AboutContent.section}
                 icon="../imgs/reliable.jpg"
-                id="about"
+                id="mission"
             />
             <ContentBlock
                 direction="right"
                 title={MissionContent.title}
                 content={MissionContent.text}
-                icon="../imgs/money3.jpg"
-                id="mission"
+                icon="../imgs/team2.jpg"
+                id="team"
             />
 
             {/* Section Title for the Carousel */}
             <div style={{ textAlign: "center", margin: "10px 0" }} >
-                <h2 id={"product"} style={{ fontSize: "2rem", fontWeight: "bold", color: "#333" }}>
-                    🚀 Explore What We Do
+                <h2 id={"corporate"} style={{ fontSize: "2rem", fontWeight: "bold", color: "#333" }}>
+                    Corporate Services
                 </h2>
 
             </div>
 
-            {/* Carousel for Product and Product2 */}
-            <Slider {...sliderSettings}>
-                <div>
-                    <ContentBlock
-                        direction="left"
-                        title={ProductContent.title}
-                        content={ProductContent.text}
-                        icon="../imgs/tax3.jpg"
-                        id="product1"
-                    />
-                </div>
-                <div>
-                    <ContentBlock
-                        direction="left"
-                        title={PayrollProduct.title}
-                        content={PayrollProduct.text}
-                        icon="../imgs/payroll1.jpg"
-                        id="product2"
-                    />
-                </div>
-                <div>
-                    <ContentBlock
-                        direction="left"
-                        title={SocialMedia.title}
-                        content={SocialMedia.text}
-                        icon="../imgs/socialMedia1.jpg"
-                        id="product3"
-                    />
-                </div>
+            {/* Carousel for Corporate */}
+            <div style={{ marginBottom: "60px" }}>
+                <Slider {...sliderSettings}>
+                    {Object.entries(CorporateContent).map(([key, content], index) => (
+                        <div key={key}>
+                            <ContentBlock
+                                direction="left"
+                                title={content.title}
+                                content={content.text}
+                                icon={`../imgs/${key.toLowerCase()}.jpg`} // Adjust icon logic if needed
+                                id={`corporate${index + 1}`}
+                            />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
 
-                <div>
-                    <ContentBlock
-                        direction="left"
-                        title={SchoolApplication.title}
-                        content={SchoolApplication.text}
-                        icon="../imgs/schoolApp1.jpg"
-                        id="product4"
-                    />
-                </div>
-            </Slider>
+
+            {/* Section Title for the Carousel */}
+            <div style={{ textAlign: "center", margin: "5px 2px 10px 2px" }}>
+                <h2 id="customer" style={{ fontSize: "2rem", fontWeight: "bold", color: "#333" }}>
+                    Individual Services
+                </h2>
+            </div>
+
+
+            {/* Carousel for Individual */}
+            <div style={{ marginBottom: "60px" }}>
+                <Slider {...sliderSettings}>
+                    {Object.entries(IndividualContent).map(([key, content], index) => (
+                        <div key={key}>
+                            <ContentBlock
+                                direction="left"
+                                title={content.title}
+                                content={content.text}
+                                icon={`../imgs/${key.toLowerCase()}.jpg`} // Adjust icon logic if needed
+                                id={`corporate${index + 1}`}
+                            />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+
 
             <Contact
                 title={ContactContent.title}

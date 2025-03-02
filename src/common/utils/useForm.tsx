@@ -13,7 +13,7 @@ const initialValues: IValues = {
   message: "",
 };
 
-export const useForm = (validate: { (values: IValues): IValues }) => {
+export const useForm = (validate: (values: IValues) => IValues) => {
   const [formState, setFormState] = useState<{
     values: IValues;
     errors: IValues;
@@ -22,53 +22,53 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     errors: { ...initialValues },
   });
 
-  const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const values = formState.values;
-    const errors = validate(values);
-    setFormState((prevState) => ({ ...prevState, errors }));
 
-    const url = ""; // Fill in your API URL here
+  const resetForm = () => {
+    setFormState({
+      values: { ...initialValues },
+      errors: { ...initialValues },
+    });
+  };
+
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const googleFormUrl =
+        "https://docs.google.com/forms/d/e/1FAIpQLSfzDom5QBeFOLV0_scnJ-8pxF0T9EIts-PMNcqeVRkmRUaz6g/formResponse";
+
+    const formData = new FormData();
+    formData.append("entry.2005620554", formState.values.name);
+    formData.append("entry.1045781291", formState.values.email);
+    formData.append("entry.1065046570", formState.values.message);
 
     try {
-      if (Object.values(errors).every((error) => error === "")) {
-        const response = await fetch(url, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(values),
-        });
-
-        if (!response.ok) {
-          notification["error"]({
-            message: "Error",
-            description:
-              "There was an error sending your message, please try again later.",
-          });
-        } else {
-          event.target.reset();
-          setFormState(() => ({
-            values: { ...initialValues },
-            errors: { ...initialValues },
-          }));
-
-          notification["success"]({
-            message: "Success",
-            description: "Your message has been sent!",
-          });
-        }
-      }
-    } catch (error) {
-      notification["error"]({
-        message: "Error",
-        description: "Failed to submit form. Please try again later.",
+      await fetch(googleFormUrl, {
+        method: "POST",
+        body: formData,
+        mode: "no-cors",
       });
+
+      notification.success({
+        message: "Success",
+        description: "Your message has been sent!",
+      });
+
+      return Promise.resolve(); // ✅ Ensure it returns a resolved promise
+    } catch (error) {
+      console.error("Form submission error:", error);
+      notification.error({
+        message: "Error",
+        description: "Failed to send message. Try again later.",
+      });
+
+      return Promise.reject(error); // ❌ Prevent reset if submission fails
     }
   };
 
+
   const handleChange = (
-    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+      event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     event.persist();
     const { name, value } = event.target;
@@ -88,6 +88,7 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
   return {
     handleChange,
     handleSubmit,
+    resetForm,
     values: formState.values,
     errors: formState.errors,
   };

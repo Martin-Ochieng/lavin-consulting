@@ -1,13 +1,15 @@
 {
   "title": "Welcome to Lavin Consulting",
-  "text": "Expert solutions in payroll management, school application support, tax compliance, social media management, and financial guidance. Let us help you streamline your operations and achieve your goals.",
+  "text": "At Lavin Consulting Services, we are committed to simplifying your processes and helping you navigate the complexities of compliance, business management, and personal administrative tasks. Founded in 2022 and registered in Kenya, we work with both individuals and businesses, especially SMEs to provide expert consulting and tailored solutions that make life easier.\nWhether you need assistance with tax compliance, business registration, visa applications, or social media management, we are here to offer reliable, efficient, and professional support.",
   "button": [
     {
-      "title": "Get Started"
+      "title": "Get Started",
+      "scrollToId": "corporate"
     },
     {
       "title": "Learn More",
-      "color": "#fff"
+      "color": "#fff",
+      "scrollToId": "team"
     }
   ]
 }

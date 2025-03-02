@@ -1,19 +1,17 @@
 import { Row, Col } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
-import { SvgIcon } from "../../common/SvgIcon";
+import { SvgIcon, SvgIconMe } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 
 import i18n from "i18next";
 import {
   FooterSection,
-  Title,
   NavLink,
   Extra,
   LogoContainer,
   Para,
   Large,
   Chat,
-  Empty,
   FooterContainer,
   Language,
   Label,
@@ -26,9 +24,15 @@ interface SocialLinkProps {
   src: string;
 }
 
+interface SocialLinkMeProps {
+  href: string;
+  src: string;
+  alt: string;
+}
+
 const Footer = ({ t }: { t: TFunction }) => {
   const handleChange = (language: string) => {
-    i18n.changeLanguage(language);
+    i18n.changeLanguage(language).then(() => {});
   };
 
   const SocialLink = ({ href, src }: SocialLinkProps) => {
@@ -45,6 +49,22 @@ const Footer = ({ t }: { t: TFunction }) => {
     );
   };
 
+  const SocialLinkMe = ({ href, src,alt}: SocialLinkMeProps) => {
+    return (
+        <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={src}
+            aria-label={src}
+            title={alt}
+        >
+
+          <SvgIconMe src={src} width="30px" height="30px" alt={alt} />
+        </a>
+    );
+  };
+
   return (
     <>
       <FooterSection>
@@ -56,58 +76,39 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
+              <a href="mailto:lavinconsulting254@gmail.com">
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Policy")}</Title>
-              <Large to="/">{t("Application Security")}</Large>
-              <Large to="/">{t("Software Principles")}</Large>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Empty />
-              <Large to="/">{t("Support Center")}</Large>
-              <Large to="/">{t("Customer Support")}</Large>
-            </Col>
-          </Row>
-          <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
-              <Empty />
               <Language>{t("Address")}</Language>
-              <Para>Rancho Santa Margarita</Para>
-              <Para>2131 Elk Street</Para>
-              <Para>California</Para>
-            </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Company")}</Title>
-              <Large to="/">{t("About")}</Large>
-              <Large to="/">{t("Blog")}</Large>
-              <Large to="/">{t("Press")}</Large>
-              <Large to="/">{t("Careers & Culture")}</Large>
+              <Para>Kitengela</Para>
+              <Para>Kitengela</Para>
+              <Para>Nairobi</Para>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
                   <SvgIcon
-                    src="united-states.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
+                      src="united-states.svg"
+                      aria-label="homepage"
+                      width="30px"
+                      height="30px"
                   />
                 </LanguageSwitch>
                 <LanguageSwitch onClick={() => handleChange("es")}>
                   <SvgIcon
-                    src="spain.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
+                      src="spain.svg"
+                      aria-label="homepage"
+                      width="30px"
+                      height="30px"
                   />
                 </LanguageSwitch>
               </LanguageSwitchContainer>
             </Col>
           </Row>
+
         </Container>
       </FooterSection>
       <Extra>
@@ -129,6 +130,7 @@ const Footer = ({ t }: { t: TFunction }) => {
             </NavLink>
             <FooterContainer>
 
+
               <SocialLink
                 href="https://twitter.com/Adrinlolx"
                 src="twitter.svg"
@@ -138,6 +140,11 @@ const Footer = ({ t }: { t: TFunction }) => {
                 src="linkedin.svg"
               />
 
+              <SocialLinkMe
+                  href="https://www.linkedin.com/in/martin-ochieng-a829b67b/"
+                  src="martin.svg"
+                  alt="From Martin With ❤️"
+              />
 
             </FooterContainer>
           </Row>
