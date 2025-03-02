@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/lavin-consulting/static/css/main.4b30b629.css",
-    "main.js": "/lavin-consulting/static/js/main.26fc413b.js",
+    "main.js": "/lavin-consulting/static/js/main.e8dc5b69.js",
     "static/css/617.95751abf.chunk.css": "/lavin-consulting/static/css/617.95751abf.chunk.css",
-    "static/js/617.2ad6613c.chunk.js": "/lavin-consulting/static/js/617.2ad6613c.chunk.js",
+    "static/js/617.9a165677.chunk.js": "/lavin-consulting/static/js/617.9a165677.chunk.js",
     "static/js/453.5f441d32.chunk.js": "/lavin-consulting/static/js/453.5f441d32.chunk.js",
     "static/js/978.b9aa6fea.chunk.js": "/lavin-consulting/static/js/978.b9aa6fea.chunk.js",
     "static/js/538.7502cfce.chunk.js": "/lavin-consulting/static/js/538.7502cfce.chunk.js",
@@ -16,9 +16,9 @@
     "index.html": "/lavin-consulting/index.html",
     "static/media/slick.woff": "/lavin-consulting/static/media/slick.295183786cd8a1389865.woff",
     "main.4b30b629.css.map": "/lavin-consulting/static/css/main.4b30b629.css.map",
-    "main.26fc413b.js.map": "/lavin-consulting/static/js/main.26fc413b.js.map",
+    "main.e8dc5b69.js.map": "/lavin-consulting/static/js/main.e8dc5b69.js.map",
     "617.95751abf.chunk.css.map": "/lavin-consulting/static/css/617.95751abf.chunk.css.map",
-    "617.2ad6613c.chunk.js.map": "/lavin-consulting/static/js/617.2ad6613c.chunk.js.map",
+    "617.9a165677.chunk.js.map": "/lavin-consulting/static/js/617.9a165677.chunk.js.map",
     "453.5f441d32.chunk.js.map": "/lavin-consulting/static/js/453.5f441d32.chunk.js.map",
     "978.b9aa6fea.chunk.js.map": "/lavin-consulting/static/js/978.b9aa6fea.chunk.js.map",
     "538.7502cfce.chunk.js.map": "/lavin-consulting/static/js/538.7502cfce.chunk.js.map",
@@ -28,6 +28,6 @@
   },
   "entrypoints": [
     "static/css/main.4b30b629.css",
-    "static/js/main.26fc413b.js"
+    "static/js/main.e8dc5b69.js"
   ]
 }
