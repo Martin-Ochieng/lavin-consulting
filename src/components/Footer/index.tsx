@@ -55,13 +55,12 @@ const Footer = ({ t }: { t: TFunction }) => {
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Contact Us")}</Language>
+              <Language>{t("Find Us")}</Language>
               <SocialSwitchContainer>
 
-
-                <SocialSwitch onClick={() => window.open("https://twitter.com/YourProfile", "_blank")}>
+                <SocialSwitch onClick={() => window.open("https://www.instagram.com/lavinconsulting254?igsh=MTU2eDl4MzU4cWo1eQ==", "_blank")}>
                   <SvgIcon
-                      src="twitter.svg"
+                      src="instagram.svg"
                       aria-label="homepage"
                       width="30px"
                       height="30px"
@@ -77,13 +76,22 @@ const Footer = ({ t }: { t: TFunction }) => {
                       height="30px"
                   />
                 </SocialSwitch>
+
+                <SocialSwitch onClick={() => window.open("https://www.facebook.com/share/15CZTxN598/", "_blank")}>
+                  <SvgIcon
+                      src="facebook.svg"
+                      aria-label="homepage"
+                      width="30px"
+                      height="30px"
+                  />
+                </SocialSwitch>
               </SocialSwitchContainer>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Language>{t("Address")}</Language>
-              <Para>Kitengela</Para>
-              <Para>Kitengela</Para>
-              <Para>Nairobi</Para>
+              <Language>{t("Contact Us")}</Language>
+              <Para>Call/WhatsApp No: +254710662937</Para>
+              <Para>email: lavinconsulting254@gmail.com</Para>
+
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>

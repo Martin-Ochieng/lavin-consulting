@@ -40,7 +40,6 @@ const Home = () => {
                 direction="right"
                 title={IntroContent.title}
                 content={IntroContent.text}
-                button={IntroContent.button}
                 icon="../imgs/lavin2.png"
                 id="intro"
             />
@@ -95,7 +94,7 @@ const Home = () => {
             {/* Section Title for the Carousel */}
             <div style={{ textAlign: "center", margin: "5px 2px 10px 2px" }}>
                 <h2 id="customer" style={{ fontSize: "2rem", fontWeight: "bold", color: "#333" }}>
-                    Individual Services
+                    Tailored Support for Individuals
                 </h2>
             </div>
 

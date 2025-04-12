@@ -73,12 +73,7 @@ const MiddleBlock = ({ title, content, button, sliderContent, t }: MiddleBlockPr
                     </SliderWrapper>
                 )}
 
-                {/* Button Below Slider */}
-                {button && (
-                    <Button name="submit" onClick={() => scrollTo("mission")}>
-                      {t(button)}
-                    </Button>
-                )}
+
               </Col>
             </ContentWrapper>
           </ResponsiveRow>

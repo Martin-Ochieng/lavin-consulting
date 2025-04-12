@@ -1,0 +1,7 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <!-- Rounded square outline -->
+    <rect x="32" y="32" width="448" height="448" rx="60" ry="60" fill="none" stroke="black" stroke-width="16"/>
+
+    <!-- Facebook "f" -->
+    <path d="M288 176h32v-48h-32c-35.35 0-64 28.65-64 64v32h-48v64h48v128h64V288h48l8-64h-56v-32c0-8.84 7.16-16 16-16z" fill="black"/>
+</svg>
